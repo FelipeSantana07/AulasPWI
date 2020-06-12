@@ -7,83 +7,117 @@
 
         <style>
             
+            a{text-decoration: none;
+                color: #9e3131;
+            }
+            
+            .quadrado{
+                color: #632525;
+                border-style: solid;                
+            }
+
             body{
-                background-color: #00b7ff;
+                background-color: #f77777;
+                width: 100%;
+                height: 100%;
+                font-family: monospace;
+                font-size: 20px
             }
 
             *{
-                margin: 5px;
-                padding: 10px;
-                font-family: monospace;
-                font-size: 35px;
+               margin: 0px;
+               padding: 0px;
             }
-            
-            h1{
-                padding: 50px;
-                background-color:#6b428a;
-                margin-top: 50px;
-                margin-bottom: 50px ;
-                margin-left: 15px;
-                margin-right: 15px;
-                text-align: center;
+          
+            header{
+                position: sticky;
+                top: 0px;
             }
 
-            a{
-                margin-left: 30px;
-                text-decoration: none;
-                color: #6e3f91;
+            .topo{
+            background-color: #eb5b5b;
+            height: 100px;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+            .logo{
+                width: 90px;
+                float: left;
+                padding-left: 190px;
+                
+            }
+            #imglogo{
+                width: 100%;
             }
 
-            li{
-                margin-left: 40px;
+            #titulopag{
+                margin: 20px;
+                margin-left: 1100px;
+                padding-left: 20px;
             }
-            
 
-            p{
-                margin-left: 30px;
+            .barratopo{
+                height: 10px;
+                background-color: #6d3434;
+            }
+
+            .card{
+                margin-top: 20px;
+                margin-left: 100px;
+                margin-right: 100px;
+                padding: 25px;
+                background-color: #ce9a9a;
                 
             }
 
-            #subtitulo{
-                color:  #be8de3
+            .borda{
+                border-radius: 32px;
             }
 
-            #titulo-da-pagina{
-                background-color: #431d5e;
-                
+            .centro{
                 text-align: center;
+                border-radius: 140px;
             }
 
-            .negrito-roxo {
-                font-weight: bold;
-                color: #6d51c2;
-            }
 
-            .centralizado{
-                text-align:center;
-            }
         </style>
 
     </head>
 
     <body>
+
+        <header>
+            <div class="barratopo"></div>
+            <div class="topo">
+                <div class="logo">
+                    <img id="imglogo" src="img/logo.png" alt="logo da pagina">
+                </div> 
+                 <h1 id="titulopag">   
+                    <a href="https://www.tudogostoso.com.br/" target="blank">RECEITAS DO SANT</a>
+                </h1>
+            </div>
+            <div class="barratopo"></div>
+        </header>
         
-        <h1 id="titulo-da-pagina" style="" class="">   
-            <a href="https://www.tudogostoso.com.br/" target="blank">RECEITAS DO SANT</a>
-        </h1>
-        <p class="negrito-roxo centralizado">Escolha uma receita abaixo:</p>
-        <ul>
+
+        <div class="card borda">
+        <p>Escolha uma receita abaixo:</p>
+       
+        <ul class="quadrado">
             <li><a href="receitas_doces/index.html">Receitas DOCE </a></li>
             <li><a href="receitas_salgados/index.html">Receitas SALGADAS</a></li>
         </ul>
-
-        <h1 id="subtitulo" class="centralizado">AS MELHORES RECEITAS</h1>
-
-        <a class="negrito-roxo"href="atividade/index.html">Atividade das Tags</a>
+        
+        
+        </div>
+        
 
         <br/>
-
-        <img  src="img/animacao.gif" alt="Paltel deu cereto" />     
+        <div class="card centro">
+        <img id="foto" class="displayed" src="img/animacao.gif" alt="Paltel deu cereto" />     
+        </div>
     </body>
 
 </html>
